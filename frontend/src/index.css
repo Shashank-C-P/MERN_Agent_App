@@ -1,0 +1,25 @@
+/* Import a clean, modern font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Define color variables for easy reuse */
+:root {
+  --primary-color: #4a90e2; /* A nice blue */
+  --background-color: #f4f7f6;
+  --card-background-color: #ffffff;
+  --text-color: #333;
+  --border-color: #e0e0e0;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+* {
+  box-sizing: border-box;
+}

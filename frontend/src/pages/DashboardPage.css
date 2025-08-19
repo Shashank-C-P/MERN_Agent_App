@@ -1,0 +1,163 @@
+/* Dashboard Layout */
+.dashboard-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dashboard-header h1 {
+  margin: 0;
+}
+
+/* NEW Tab Styles */
+.dashboard-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 15px 25px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  color: #888;
+  border-bottom: 3px solid transparent; /* Start with transparent border */
+  margin-bottom: -1px; /* Align with the container's bottom border */
+}
+
+.tab.active {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+}
+
+
+/* Card Style for components */
+.card {
+  background: var(--card-background-color);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+
+/* Form Styles used in components */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.upload-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-input::file-selector-button {
+  margin-right: 15px;
+  border: 1px solid var(--primary-color);
+  padding: 10px 15px;
+  border-radius: 4px;
+  color: var(--primary-color);
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.file-input::file-selector-button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  border-color: #aaa;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #3a7ac8;
+}
+
+/* Message Styles */
+.success-message {
+  color: var(--success-color);
+  font-weight: 500;
+}
+.error-message {
+  color: var(--error-color);
+  font-weight: 500;
+}
+
+
+/* Task List Table */
+.agent-task-group {
+  margin-bottom: 30px;
+}
+
+.agent-task-group h3 {
+  color: var(--primary-color);
+}
+.agent-task-group h3 span {
+  color: #888;
+  font-weight: 400;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+thead {
+  background-color: #f9f9f9;
+}
